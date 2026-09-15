@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>InBx — Connect · Refer · Grow</title>
+<link rel="icon" type="image/png" href="assets/icon.png" />
+<meta name="description" content="InBx is a professional business networking and referral community for Indian entrepreneurs, business owners, consultants and professionals. Connect — Refer — Grow." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+/* Hallmark · pre-emit critique: P5 H5 E5 S5 R5 V5
+   Macrostructure: Manifesto — display statement, hairline register, single close
+   Theme: InBx locked — Navy #1E2A3C · Signal Blue #0B5CFF · Teal #2FB495 · flat, no shadows, no gradients
+*/
+:root{
+  --blue:#0B5CFF;
+  --blue-hover:#0847CC;
+  --navy:#1E2A3C;
+  --teal:#2FB495;
+  --canvas:#F4F6FA;
+  --line:#E2E6EE;
+  --line-strong:#C7CDDA;
+  --slate:#4B5566;
+  --muted:#7C8699;
+  --ink:#1E2A3C;
+  --font:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+  --max:1120px;
+  --pad:22px;
+}
+@media(min-width:960px){:root{--pad:40px}}
+*{box-sizing:border-box}
+html,body{overflow-x:clip}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--font);color:var(--ink);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.5}
+a{color:var(--blue);text-decoration:none}
+:focus-visible{outline:3px solid rgba(11,92,255,.3);outline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+h1,h2,h3{font-style:normal;margin:0;overflow-wrap:anywhere;min-width:0}
+
+.kicker{font-family:var(--mono);font-weight:600;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:30;background:var(--navy)}
+.nav-inner{max-width:var(--max);margin:0 auto;padding:0 var(--pad);height:68px;display:flex;align-items:center;gap:16px}
+@media(min-width:768px){.nav-inner{height:80px}}
+.brand{display:flex;align-items:center;gap:11px;flex:1;min-width:0}
+.brand img{display:block;width:26px;height:30px;object-fit:contain}
+.wordmark{font-weight:800;font-size:21px;letter-spacing:-0.045em;line-height:1;color:#fff}
+
+/* BUTTONS — flat, confident */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  height:48px;padding:0 24px;
+  font-family:var(--font);font-weight:700;font-size:15px;white-space:nowrap;
+  cursor:pointer;border:1px solid transparent;border-radius:999px;
+  transition:background 140ms ease-out,color 140ms ease-out,border-color 140ms ease-out;
+}
+.btn:active{transform:translateY(1px)}
+.btn-primary{background:var(--blue);color:#fff;border-color:var(--blue)}
+.btn-primary:hover{background:var(--blue-hover);border-color:var(--blue-hover)}
+.btn-light{background:#fff;color:var(--navy);border-color:#fff}
+.btn-light:hover{background:var(--canvas);border-color:var(--canvas)}
+.btn-sm{height:42px;padding:0 20px;font-size:14px}
+.btn-lg{height:58px;padding:0 32px;font-size:16px}
+@media(max-width:520px){.btn-lg{width:100%}}
+
+/* HERO */
+.hero{background:var(--navy);color:#fff;padding:64px 0 0}
+@media(min-width:900px){.hero{padding:128px 0 0}}
+.hero h1{
+  margin:28px 0 0;
+  font-size:clamp(52px,14vw,116px);
+  line-height:.9;letter-spacing:-0.055em;font-weight:800;
+}
+.hero h1 em{font-style:normal;color:var(--teal)}
+.hero p{
+  margin:32px 0 0;max-width:30ch;
+  font-size:clamp(17px,2.2vw,21px);line-height:1.5;color:#C7CDDA;text-wrap:pretty;
+}
+.hero .btn{margin-top:36px}
+.hero-meta{
+  margin-top:72px;border-top:1px solid rgba(255,255,255,.14);
+  display:flex;flex-wrap:wrap;gap:14px 40px;padding:20px 0 28px;
+}
+@media(min-width:900px){.hero-meta{margin-top:112px;padding:26px 0 34px}}
+.hero-meta span{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8E99AF}
+
+/* SECTIONS */
+.section{padding-block:72px}
+@media(min-width:900px){.section{padding-block:128px}}
+.section h2{
+  font-size:clamp(34px,6vw,60px);line-height:.98;letter-spacing:-0.045em;font-weight:800;
+  max-width:16ch;text-wrap:balance;
+}
+.section .kicker{display:block;margin-bottom:20px}
+
+/* CRG — three statements */
+.crg{display:grid;gap:0;margin-top:56px;border-top:2px solid var(--ink)}
+@media(min-width:840px){.crg{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.crg-col{padding:28px 0 32px;border-bottom:1px solid var(--line);min-width:0}
+@media(min-width:840px){
+  .crg-col{padding:32px 32px 44px;border-bottom:none;border-right:1px solid var(--line)}
+  .crg-col:first-child{padding-left:0}
+  .crg-col:last-child{border-right:none;padding-right:0}
+}
+.crg-col b{display:block;font-size:clamp(26px,3.4vw,34px);font-weight:800;letter-spacing:-0.035em;line-height:1.05}
+.crg-col span{display:block;margin-top:12px;color:var(--slate);font-size:15px;line-height:1.6;max-width:26ch}
+.crg-col i{font-style:normal;font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--blue)}
+
+/* FORMAT — hairline register, names only */
+.fmt{margin-top:48px;border-top:1px solid var(--ink)}
+.fmt-row{
+  display:grid;grid-template-columns:auto minmax(0,1fr);gap:20px;align-items:baseline;
+  padding:22px 0;border-bottom:1px solid var(--line);
+}
+@media(min-width:900px){.fmt-row{gap:40px;padding:28px 0}}
+.fmt-row i{font-style:normal;font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--muted)}
+.fmt-row b{font-size:clamp(19px,2.6vw,27px);font-weight:700;letter-spacing:-0.03em;line-height:1.2}
+
+/* CLOSE — navy, single action */
+.close{background:var(--navy);color:#fff;padding:80px 0}
+@media(min-width:900px){.close{padding:144px 0}}
+.close .kicker{color:#8E99AF;display:block;margin-bottom:20px}
+.close h2{
+  font-size:clamp(34px,6vw,60px);line-height:.98;letter-spacing:-0.045em;font-weight:800;
+  max-width:17ch;text-wrap:balance;
+}
+.close h2 em{font-style:normal;color:var(--teal)}
+.close p{margin:24px 0 0;max-width:46ch;color:#C7CDDA;font-size:16px;line-height:1.6}
+.close .btn{margin-top:40px}
+.close .fine{display:block;margin-top:20px;font-family:var(--mono);font-size:11px;color:#8E99AF;letter-spacing:.04em}
+
+/* FOOTER */
+.footer{padding:44px 0;border-top:1px solid var(--line)}
+.foot{display:flex;flex-wrap:wrap;gap:24px 40px;align-items:center}
+.foot-brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:19px;letter-spacing:-0.045em}
+.foot-brand img{display:block;width:24px;height:28px;object-fit:contain}
+.foot p{margin:0;color:var(--slate);font-size:14px;font-weight:600;letter-spacing:-0.01em}
+.foot-meta{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.04em}
+.foot-meta a{text-decoration:underline;text-underline-offset:3px;color:var(--slate)}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#" aria-label="InBx home">
+      <img src="assets/icon.png" alt="" />
+      <span class="wordmark">InBx</span>
+    </a>
+    <a class="btn btn-primary btn-sm" href="https://forms.gle/zC6zmgu82vnmNsNdA" target="_blank" rel="noopener">Register</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <span class="kicker">InBx — By invitation</span>
+    <h1>Connect.<br />Refer.<br /><em>Grow.</em></h1>
+    <p>A business networking and referral community for Indian entrepreneurs, owners and professionals.</p>
+    <a class="btn btn-light btn-lg" href="https://forms.gle/zC6zmgu82vnmNsNdA" target="_blank" rel="noopener">Register →</a>
+    <div class="hero-meta">
+      <span>City cohorts</span>
+      <span>First 25</span>
+      <span>Date to be announced</span>
+    </div>
+  </div>
+</section>
+
+<main>
+  <section class="section wrap">
+    <h2>Relationships, not business cards.</h2>
+    <div class="crg">
+      <div class="crg-col">
+        <i>01</i>
+        <b>Connect</b>
+        <span>City meets and one-to-ones that put you in front of the right people.</span>
+      </div>
+      <div class="crg-col">
+        <i>02</i>
+        <b>Refer</b>
+        <span>Introductions made only where there is genuine fit.</span>
+      </div>
+      <div class="crg-col">
+        <i>03</i>
+        <b>Grow</b>
+        <span>Clients, partners and collaborators through trusted connections.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="section wrap" style="padding-top:0">
+    <span class="kicker">The format</span>
+    <h2>Five things, done well.</h2>
+    <div class="fmt">
+      <div class="fmt-row"><i>01</i><b>Structured networking meets</b></div>
+      <div class="fmt-row"><i>02</i><b>Focused business introductions</b></div>
+      <div class="fmt-row"><i>03</i><b>One-to-one conversations</b></div>
+      <div class="fmt-row"><i>04</i><b>Learning sessions</b></div>
+      <div class="fmt-row"><i>05</i><b>Responsible referrals</b></div>
+    </div>
+  </section>
+
+  <section class="close">
+    <div class="wrap">
+      <span class="kicker">Early opportunity</span>
+      <h2>The first <em>25</em> businesses display their brand on InBx.</h2>
+      <p>Subject to profile review and category availability — one business per category in the early cohort.</p>
+      <a class="btn btn-primary btn-lg" href="https://forms.gle/zC6zmgu82vnmNsNdA" target="_blank" rel="noopener">Reserve your place →</a>
+      <span class="fine">Takes ~1 minute · Google Form</span>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot">
+    <div class="foot-brand"><img src="assets/icon.png" alt="" /> InBx</div>
+    <p>Connect — Refer — Grow.</p>
+    <div class="foot-meta">© 2026 InBx · <a href="https://forms.gle/zC6zmgu82vnmNsNdA" target="_blank" rel="noopener">Register</a></div>
+  </div>
+</footer>
+
+</body>
+</html>
