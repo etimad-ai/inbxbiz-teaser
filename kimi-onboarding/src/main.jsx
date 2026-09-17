@@ -7,7 +7,7 @@ const API_URL =
   "https://nayma-unified-leads-capture-795256461991.me-central1.run.app/";
 
 const formSteps = [
-  { key: "name", title: "What's your name?", hint: "Full name", type: "text", required: true },
+  { key: "name", title: "Please share your full name", hint: "Full name", type: "text", required: true },
   { key: "email", title: "Where can we reach you?", hint: "you@company.com", type: "email", required: true },
   { key: "phone", title: "A phone number for event updates.", hint: "WhatsApp number works best", type: "tel", required: true },
   { key: "city", title: "Which city are you based in?", hint: "City", type: "text", required: true },
@@ -30,8 +30,8 @@ const formSteps = [
   },
   {
     key: "lookingFor",
-    title: "What do you want from InBx?",
-    hint: "Choose any that fit.",
+    title: "How would you like InBx to support your business?",
+    hint: "Select all that apply.",
     type: "choice",
     multiple: true,
     required: true,
@@ -284,7 +284,7 @@ function Registration() {
           <p className="mono-label">REGISTRATION RECEIVED</p>
           <h2>You're on the list{answers.name ? `, ${String(answers.name).split(" ")[0]}` : ""}.</h2>
           <p>
-            We'll review your profile and reach out with details of the first InBx meet
+            We'll review your profile and reach out with details of the first InBx meeting
             {answers.city ? ` in ${answers.city}` : " in your city"}.
           </p>
           <a className="btn btn-primary" href="../">Back to site</a>
