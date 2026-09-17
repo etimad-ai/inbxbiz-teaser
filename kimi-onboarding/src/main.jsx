@@ -318,7 +318,7 @@ function App() {
             <img src="../assets/icon.png" alt="" />
             <span className="wordmark">InBx</span>
           </a>
-          <a href="../" style={{fontFamily:"var(--mono)",fontSize:"11px",letterSpacing:".14em",textTransform:"uppercase",color:"#8E99AF"}}>inbx.biz</a>
+          <a href="../" style={{fontFamily:"var(--mono)",fontSize:"11px",letterSpacing:".04em",color:"#8E99AF"}}>inbx.biz</a>
         </div>
       </header>
       <main className="page">
@@ -330,6 +330,7 @@ function App() {
           <p>Connect — Refer — Grow.</p>
           <div className="foot-meta">© 2026 InBx</div>
         </div>
+        <div className="wrap"><p className="disclaimer">InBX is an independent private business networking and referral-facilitation platform. It does not represent or act on behalf of any government, embassy, chamber, regulator, or other business-networking organisation; it does not guarantee referrals, clients, contracts, revenue, or business outcomes; and every member or participant remains independently responsible for maintaining all required licences, legal permissions, taxes, professional obligations, contracts, and compliance with applicable laws.</p></div>
       </footer>
     </>
   );
