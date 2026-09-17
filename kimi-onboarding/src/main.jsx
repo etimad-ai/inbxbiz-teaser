@@ -77,9 +77,9 @@ async function submitRegistration(answers) {
 
 function Mark() {
   return (
-    <span className="mark" aria-label="InBx">
-      <span className="mark__badge" aria-hidden="true"><span className="mark__arrow" /></span>
-      <span className="mark__word">InBx</span>
+    <span className="brand" aria-label="InBx">
+      <img src="../assets/icon.png" alt="" />
+      <span className="wordmark">InBx</span>
     </span>
   );
 }
@@ -98,7 +98,7 @@ function BrandPanel() {
       <span className="brand-panel__tile brand-panel__tile--navy" />
       <span className="brand-panel__tile brand-panel__tile--blue" />
       <span className="brand-panel__tile brand-panel__tile--teal" />
-      <span className="brand-panel__mark"><span className="mark__arrow" /></span>
+      <span className="brand-panel__mark"><span className="brand-panel__mark-dot" aria-hidden="true" /></span>
       <span className="brand-panel__caption">Connect — Refer — Grow</span>
     </div>
   );
@@ -227,7 +227,7 @@ function Registration() {
               professionals. Answer a few questions — about two minutes — and we'll reach out with
               details of the first meet in your city.
             </p>
-            <button className="button button--primary button--lg" onClick={() => setScreen("form")}>
+            <button className="btn btn-primary btn-lg" onClick={() => setScreen("form")}>
               Start registration <ArrowIcon />
             </button>
             <p className="welcome-panel__fine">
@@ -259,12 +259,13 @@ function Registration() {
             </p>
             <div className="form-shell__actions">
               <button
-                className="button button--ghost"
+                className="btn"
                 type="button"
+                style={{background:"#fff",borderColor:"var(--line-strong)",color:"var(--ink)"}}
                 onClick={() => stepIndex === 0 ? setScreen("welcome") : setStepIndex((index) => index - 1)}
               >Back</button>
               <button
-                className="button button--primary"
+                className="btn btn-primary"
                 type="submit"
                 disabled={submitting}
                 data-state={submitting ? "loading" : undefined}
@@ -286,7 +287,7 @@ function Registration() {
             We'll review your profile and reach out with details of the first InBx meet
             {answers.city ? ` in ${answers.city}` : " in your city"}.
           </p>
-          <a className="button button--outline" href="../">Back to site</a>
+          <a className="btn btn-primary" href="../">Back to site</a>
         </section>
       )}
 
@@ -297,10 +298,10 @@ function Registration() {
           <h2>We couldn't send that.</h2>
           <p>Something went wrong while sending your registration. Your answers are still here — try again.</p>
           <div className="success-panel__actions">
-            <button className="button button--primary" onClick={submit} disabled={submitting}>
+            <button className="btn btn-primary" onClick={submit} disabled={submitting}>
               {submitting ? "Sending…" : "Try again"}
             </button>
-            <a className="button button--ghost" href="../">Back to site</a>
+            <a className="btn" href="../" style={{background:"#fff",borderColor:"var(--line-strong)",color:"var(--ink)"}}>Back to site</a>
           </div>
         </section>
       )}
@@ -311,16 +312,24 @@ function Registration() {
 function App() {
   return (
     <>
-      <header className="site-header">
-        <a className="site-header__brand" href="../" aria-label="Back to the InBx site"><Mark /></a>
-        <a className="site-header__back" href="../">inbx.biz</a>
+      <header className="nav">
+        <div className="nav-inner">
+          <a className="brand" href="../" aria-label="Back to the InBx site">
+            <img src="../assets/icon.png" alt="" />
+            <span className="wordmark">InBx</span>
+          </a>
+          <a href="../" style={{fontFamily:"var(--mono)",fontSize:"11px",letterSpacing:".14em",textTransform:"uppercase",color:"#8E99AF"}}>inbx.biz</a>
+        </div>
       </header>
       <main className="page">
         <Registration />
       </main>
-      <footer className="site-footer">
-        <span>© 2026 InBx</span>
-        <span>Connect — Refer — Grow</span>
+      <footer className="footer">
+        <div className="wrap foot">
+          <div className="foot-brand"><img src="../assets/icon.png" alt="" /> InBx</div>
+          <p>Connect — Refer — Grow.</p>
+          <div className="foot-meta">© 2026 InBx</div>
+        </div>
       </footer>
     </>
   );

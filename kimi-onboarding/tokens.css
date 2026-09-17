@@ -1,65 +1,73 @@
-:root {
-  /* InBx brand — locked (see "InBx Brand Theme.dc.html")
-   * Flat fills only. No gradients, glows or drop shadows on brand elements. */
-  --color-paper: #FFFFFF;
-  --color-paper-2: #F4F6FA;
-  --color-paper-3: #E2E6EE;
-  --color-ink: #1E2A3C;
-  --color-ink-2: #2A3950;
-  --color-ink-soft: #4B5566;
-  --color-ink-muted: #7C8699;
-  --color-rule: #E2E6EE;
-  --color-rule-strong: #C7CDDA;
-  --color-accent: #0B5CFF;
-  --color-accent-hover: #0847CC;
-  --color-accent-soft: #E6EFFF;
-  --color-teal: #2FB495;
-  --color-danger: #C1332E;
-  --color-danger-soft: #FDF3F2;
-  --color-success: #17806A;
-  --color-success-soft: #E4F2EC;
-  --color-focus-ring: rgba(11, 92, 255, 0.25);
-  /* On-navy reading tones */
-  --color-on-navy: #FFFFFF;
-  --color-on-navy-soft: #C7CDDA;
-  --color-on-navy-muted: #8E99AF;
-
-  --font-display: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
-  --font-body: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
-  --font-outlier: "JetBrains Mono", ui-monospace, monospace;
-
-  --space-2xs: 0.25rem;
-  --space-xs: 0.5rem;
-  --space-sm: 0.75rem;
-  --space-md: 1rem;
-  --space-lg: 1.5rem;
-  --space-xl: 2rem;
-  --space-2xl: 3rem;
-  --space-3xl: 4rem;
-  --space-4xl: 6rem;
-  --space-5xl: 8rem;
-
-  --text-xs: 0.75rem;
-  --text-sm: 0.875rem;
-  --text-base: 1rem;
-  --text-md: 1.25rem;
-  --text-lg: 1.5625rem;
-  --text-xl: 1.953rem;
-  --text-2xl: 2.441rem;
-  --text-3xl: 3.052rem;
-
-  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
-  --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
-  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
-  --dur-fast: 140ms;
-  --dur-base: 240ms;
-  --dur-slow: 700ms;
-
-  --rule-hair: 1px;
-  --radius-sm: 0.625rem;
-  --radius-md: 0.875rem;
-  --radius-lg: 1.125rem;
-  --radius-pill: 999px;
-  --z-sticky: 10;
-  --z-sticky-nav: 30;
+:root{
+  --blue:#0B5CFF;
+  --blue-hover:#0847CC;
+  --navy:#1E2A3C;
+  --teal:#2FB495;
+  --canvas:#F4F6FA;
+  --line:#E2E6EE;
+  --line-strong:#C7CDDA;
+  --slate:#4B5566;
+  --muted:#7C8699;
+  --ink:#1E2A3C;
+  --font:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;
+  --mono:'JetBrains Mono',ui-monospace,monospace;
+  --max:1120px;
+  --pad:22px;
+  /* aliases for registration components (same values, variant names) */
+  --color-paper:#FFFFFF;
+  --color-paper-2:var(--canvas);
+  --color-paper-3:var(--line);
+  --color-ink:var(--navy);
+  --color-ink-2:#2A3950;
+  --color-ink-soft:var(--slate);
+  --color-ink-muted:var(--muted);
+  --color-rule:var(--line);
+  --color-rule-strong:var(--line-strong);
+  --color-accent:var(--blue);
+  --color-accent-hover:var(--blue-hover);
+  --color-accent-soft:#E6EFFF;
+  --color-teal:var(--teal);
+  --color-danger:#C1332E;
+  --color-danger-soft:#FDF3F2;
+  --color-success:#17806A;
+  --color-success-soft:#E4F2EC;
+  --color-focus-ring:rgba(11,92,255,.25);
+  --color-on-navy:#FFFFFF;
+  --color-on-navy-soft:#C7CDDA;
+  --color-on-navy-muted:#8E99AF;
+  --font-display:var(--font);
+  --font-body:var(--font);
+  --font-outlier:var(--mono);
+  --space-2xs:0.25rem;
+  --space-xs:0.5rem;
+  --space-sm:0.75rem;
+  --space-md:1rem;
+  --space-lg:1.5rem;
+  --space-xl:2rem;
+  --space-2xl:3rem;
+  --space-3xl:4rem;
+  --space-4xl:6rem;
+  --space-5xl:8rem;
+  --text-xs:0.75rem;
+  --text-sm:0.875rem;
+  --text-base:1rem;
+  --text-md:1.25rem;
+  --text-lg:1.5625rem;
+  --text-xl:1.953rem;
+  --text-2xl:2.441rem;
+  --text-3xl:3.052rem;
+  --ease-out:cubic-bezier(0.16,1,0.3,1);
+  --ease-in:cubic-bezier(0.7,0,0.84,0);
+  --ease-in-out:cubic-bezier(0.65,0,0.35,1);
+  --dur-fast:140ms;
+  --dur-base:240ms;
+  --dur-slow:700ms;
+  --rule-hair:1px;
+  --radius-sm:0.625rem;
+  --radius-md:0.875rem;
+  --radius-lg:1.125rem;
+  --radius-pill:999px;
+  --z-sticky:10;
+  --z-sticky-nav:30;
 }
+@media(min-width:960px){:root{--pad:40px}}
