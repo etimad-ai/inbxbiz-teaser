@@ -37,6 +37,7 @@ jobs:
           cp index.html _site/
           cp -r assets _site/
           cp -r kimi-onboarding/dist/. _site/register/
+          [ ! -f CNAME ] || cp CNAME _site/
 
       - uses: actions/upload-pages-artifact@v3
         with:
