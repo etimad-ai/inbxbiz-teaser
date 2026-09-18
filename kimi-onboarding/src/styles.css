@@ -68,8 +68,8 @@ svg{display:block}
 .registration{width:100%;display:grid;justify-items:center;max-width:var(--max);margin:0 auto}
 
 /* ---------- Welcome ---------- */
-.welcome-panel{width:100%;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:stretch;gap:clamp(var(--space-xl),5vw,var(--space-4xl))}
-.welcome-panel__copy{align-self:center}
+.welcome-panel{width:min(36rem,100%);display:block}
+.welcome-panel__copy{}
 .welcome-panel__copy h1{margin:20px 0 0;font-size:clamp(34px,6vw,60px);line-height:.98;letter-spacing:-0.045em;font-weight:800}
 .welcome-panel__copy > p:not(.mono-label):not(.welcome-panel__fine){max-width:46ch;margin:24px 0 0;color:var(--slate);font-size:15px;line-height:1.6}
 .welcome-panel__fine{margin:16px 0 0;max-width:32rem;font-family:var(--mono);font-size:11px;line-height:1.7;letter-spacing:.04em;color:var(--muted)}

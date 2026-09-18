@@ -92,16 +92,7 @@ function ArrowIcon() {
   );
 }
 
-function BrandPanel() {
-  return (
-    <div className="brand-panel" aria-hidden="true">
-      <span className="brand-panel__tile brand-panel__tile--navy" />
-      <span className="brand-panel__tile brand-panel__tile--blue" />
-      <span className="brand-panel__tile brand-panel__tile--teal" />
-      <span className="brand-panel__caption">Connect — Refer — Grow</span>
-    </div>
-  );
-}
+function BrandPanel() { return null; }
 
 function Field({ step, value, onChange, invalid }) {
   const inputRef = useRef(null);
@@ -217,7 +208,6 @@ function Registration() {
     <div className="registration">
       {screen === "welcome" && (
         <section className="welcome-panel">
-          <BrandPanel />
           <div className="welcome-panel__copy">
             <p className="mono-label">INBX · REGISTRATION</p>
             <h1>Register for InBx.</h1>
