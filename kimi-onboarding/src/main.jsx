@@ -273,8 +273,7 @@ function Registration() {
           <p className="mono-label">REGISTRATION RECEIVED</p>
           <h2>You're on the list{answers.name ? `, ${String(answers.name).split(" ")[0]}` : ""}.</h2>
           <p>
-            We'll review your profile and reach out with details of the first InBx meeting
-            {answers.city ? ` in ${answers.city}` : " in your city"}.
+            We'll review your profile and reach out with details of the first InBx meeting Riyadh.
           </p>
           <a className="btn btn-primary" href="../">Back to site</a>
         </section>
