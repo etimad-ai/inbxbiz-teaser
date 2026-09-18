@@ -98,7 +98,6 @@ function BrandPanel() {
       <span className="brand-panel__tile brand-panel__tile--navy" />
       <span className="brand-panel__tile brand-panel__tile--blue" />
       <span className="brand-panel__tile brand-panel__tile--teal" />
-      <span className="brand-panel__mark"><span className="brand-panel__mark-dot" aria-hidden="true" /></span>
       <span className="brand-panel__caption">Connect — Refer — Grow</span>
     </div>
   );
@@ -318,7 +317,6 @@ function App() {
             <img src="../assets/icon.png" alt="" />
             <span className="wordmark">InBx</span>
           </a>
-          <a href="../" style={{fontFamily:"var(--mono)",fontSize:"11px",letterSpacing:".04em",color:"#8E99AF"}}>inbx.biz</a>
         </div>
       </header>
       <main className="page">
